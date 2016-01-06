@@ -14,7 +14,7 @@ for values in data {
     count = count + 1
     mean = total/count
 }
-print(mean)
+print("The mean is", mean)
 
 // median
 
@@ -37,15 +37,13 @@ var countOfValues = data.count
 var median = 0.0
 
 if(countOfValues % 2 > 0){
-    print("odd")
     var middleterm = countOfValues/2
     median = (data[middleterm])
 } else {
-    print("even")
    var middleterm = countOfValues/2
    median = (data[middleterm] + data[middleterm - 1])/2.0
 }
-print(median)
+print("The median is", median)
 
 
 
@@ -57,7 +55,8 @@ print(median)
 
 var countingDictonary = [Double: Int]()
 var count1 = 0.0
-var holdingint = 0.0
+var holdingint = 0
+var mode = 0.0
 
 
 for values in data {
@@ -80,22 +79,25 @@ for values in data {
 for (value, frequncy) in countingDictonary{
 //use a fucntion to calaulate the highest value in the dictnary
     if(frequncy > holdingint){
-        print(nice)
+        holdingint = frequncy
+        mode = value
+
     }
 }
+print("The mode is", mode)
 
 
 //////std devaiton
 //////use the data collect and get help from mr. lorrisen about the actual formula
 ////have to use the float to complete this sections of the project
-var submean = []
-var stddevation = 0.0
-for (values) in data {
-    //have to add the values to the arrays
-    submean += (values - mean)*(values - mean)
-    values
-}
-submean
+//var submean = []
+//var stddevation = 0.0
+//for (values) in data {
+//    //have to add the values to the arrays
+//    submean += (values - mean)*(values - mean)
+//    values
+//}
+//submean
 
 
 
