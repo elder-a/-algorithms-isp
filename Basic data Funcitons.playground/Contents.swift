@@ -2,7 +2,7 @@
 
 import Cocoa
 
-var data = [6.00, 5.00, 50.00, 10.00, 60.00, 30.00, 40.00, 50.00, 70.00, 10.00, 50.00]
+var data = [6.00, 5.00, 50.00, 10.00, 60.00, 30.00, 40.00, 50.00, 70.00, 10.00, 50.00, 60.00, 60.00, 60.00]
 var total = 0.0
 var count = 0.0
 var mean = 0.0
@@ -90,20 +90,30 @@ print("The mode is", mode)
 //////std devaiton
 //////use the data collect and get help from mr. lorrisen about the actual formula
 ////have to use the float to complete this sections of the project
-//var submean = []
-//var stddevation = 0.0
-//for (values) in data {
-//    //have to add the values to the arrays
-//    submean += (values - mean)*(values - mean)
-//    values
-//}
-//submean
+var submean = 0.0
+var stddevation = 0.0
+var stdmean = 0.0
+for (values) in data {
+    //have to add the values to the arrays
+    
+    // need help with the syntax putting the values in the array
+    submean += (values - mean)*(values - mean)
+    values
+}
 
+stdmean = submean / count
 
+stddevation = sqrt(stdmean)
+
+print("The Standard Devation is", stddevation)
 
 
 ////z-score
 ///* use the std devation and mean and the pre determined value from the array with the table of values then run it through the value and giver the lower percentage value
 //*/I may take this fucntion out i will focos on making the 
+
+
+
+
 
 
