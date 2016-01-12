@@ -1,0 +1,3 @@
+Command Line Interface Algorithm
+
+The input will be a number that someone writes. No matter what number it is, it will have to be converted into a Double. First the program will print a line telling the user to put a piece of data in. Then once the person has put the piece of data and presses enter it will loop again until they exit the loop pressing Q all the data collected will be put into a array. Then thew rest of a program will take over performing its functions on the code. 

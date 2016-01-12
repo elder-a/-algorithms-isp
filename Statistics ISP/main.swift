@@ -14,8 +14,10 @@ var get = 0
 
 var Hi = Stop
 
-    while get != Hi {
-    
+
+
+ while get != Hi {
+        
  print("Put one piece of Datum here", terminator: "")
   get = readLine(stripNewline: true)
  print(get)
