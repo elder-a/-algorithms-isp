@@ -14,7 +14,7 @@ for values in data {
     count = count + 1
     mean = total/count
 }
-print("The mean is", mean)
+//print("The mean is", mean)
 
 // median
 
@@ -43,7 +43,8 @@ if(countOfValues % 2 > 0){
    var middleterm = countOfValues/2
    median = (data[middleterm] + data[middleterm - 1])/2.0
 }
-print("The median is", median)
+
+//print("The median is", median)
 
 
 
@@ -84,7 +85,7 @@ for (value, frequncy) in countingDictonary{
 
     }
 }
-print("The mode is", mode)
+//print("The mode is", mode)
 
 
 //////std devaiton
@@ -105,12 +106,26 @@ stdmean = submean / count
 
 stddevation = sqrt(stdmean)
 
-print("The Standard Devation is", stddevation)
+//print("The Standard Devation is", stddevation)
 
 
 ////z-score
 ///* use the std devation and mean and the pre determined value from the array with the table of values then run it through the value and giver the lower percentage value
 //*/I may take this fucntion out i will focos on making the 
+
+
+
+//Command line interface
+
+import Foundation
+
+
+print("Welcome")
+print("Please put the data you want analizyed here", terminator: "")
+
+var input = readLine(stripNewline: true)
+
+print(input)
 
 
 

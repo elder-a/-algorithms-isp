@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "81064A051C130A10007ED524"
-               BuildableName = "Animation.app"
-               BlueprintName = "Animation"
-               ReferencedContainer = "container:Animation.xcodeproj">
+               BlueprintIdentifier = "499498D41C43DF920067BFE9"
+               BuildableName = "Statistics ISP"
+               BlueprintName = "Statistics ISP"
+               ReferencedContainer = "container:Statistics ISP.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "81064A051C130A10007ED524"
-            BuildableName = "Animation.app"
-            BlueprintName = "Animation"
-            ReferencedContainer = "container:Animation.xcodeproj">
+            BlueprintIdentifier = "499498D41C43DF920067BFE9"
+            BuildableName = "Statistics ISP"
+            BlueprintName = "Statistics ISP"
+            ReferencedContainer = "container:Statistics ISP.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "81064A051C130A10007ED524"
-            BuildableName = "Animation.app"
-            BlueprintName = "Animation"
-            ReferencedContainer = "container:Animation.xcodeproj">
+            BlueprintIdentifier = "499498D41C43DF920067BFE9"
+            BuildableName = "Statistics ISP"
+            BlueprintName = "Statistics ISP"
+            ReferencedContainer = "container:Statistics ISP.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -74,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "81064A051C130A10007ED524"
-            BuildableName = "Animation.app"
-            BlueprintName = "Animation"
-            ReferencedContainer = "container:Animation.xcodeproj">
+            BlueprintIdentifier = "499498D41C43DF920067BFE9"
+            BuildableName = "Statistics ISP"
+            BlueprintName = "Statistics ISP"
+            ReferencedContainer = "container:Statistics ISP.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
