@@ -8,19 +8,22 @@
 
 import Foundation
 
+
 print("Welcome")
 
-var get = 0
+//this will be the array that holds all the data
+var get: [Double] = []
 
-var Hi = Stop
+var count = 0
 
-
-
- while get != Hi {
-        
- print("Put one piece of Datum here", terminator: "")
+//this will allow the user to type there data into the program
+ while count < 10 {
+  count = count + 1
+  print("Put one piece of Datum here", terminator: "")
+  //stores the data in the array
   get = readLine(stripNewline: true)
- print(get)
+//  print(get)
+//  get1 = Double : get
 }
 
 

@@ -2,28 +2,32 @@
 
 import Cocoa
 
-var data = [6.00, 5.00, 50.00, 10.00, 60.00, 30.00, 40.00, 50.00, 70.00, 10.00, 50.00, 60.00, 60.00, 60.00]
+//array with all the users data
+var data : [Double] = [6.00, 5.00, 50.00, 10.00, 60.00, 30.00, 40.00, 50.00, 70.00, 10.00, 50.00, 60.00, 60.00, 60.00]
+
+
+// mean
+// add up then divde by number
+//these varibles are all for the algorithm to find the mean
 var total = 0.0
 var count = 0.0
 var mean = 0.0
 
-// mean
-// add up then divde by number
+
+//loup adds values then divides it by the amount of values then gives you mean
 for values in data {
     total += values
     count = count + 1
     mean = total/count
 }
-//print("The mean is", mean)
 
 // median
 
 /* use a sorting algorithem to arrange them from greatest to least
- * then count down till you get to the middle or middle two numbers
- * if there are two numbers add then divide by to otherwise print middle
+then count down till you get to the middle or middle two numbers
+if there are two numbers add then divide by to otherwise print middle
 */
 
-var countarray = []
 var largest = 0.0
 
 // sort the array (using built-in sort)
@@ -36,15 +40,19 @@ var countOfValues = data.count
 
 var median = 0.0
 
+
+//figures out ifs its a odd number of values in the array or even and assigns it as the medain
 if(countOfValues % 2 > 0){
+    //getts the middle term and prints it
     var middleterm = countOfValues/2
     median = (data[middleterm])
 } else {
+   //gets the two middle terms and avrages them to give you the median
    var middleterm = countOfValues/2
    median = (data[middleterm] + data[middleterm - 1])/2.0
 }
 
-//print("The median is", median)
+
 
 
 
@@ -54,12 +62,14 @@ if(countOfValues % 2 > 0){
 //value with the most counts in the second array or dictonary
 //*/
 
+//makes a dictonary to hold the values and how often they appear
 var countingDictonary = [Double: Int]()
 var count1 = 0.0
 var holdingint = 0
 var mode = 0.0
 
 
+//loups over the array and stores the values of the data as the key and the amount of times it appears as the int 
 for values in data {
     count1 = count1 + 1
     if(countingDictonary[values] == nil){
@@ -69,44 +79,36 @@ for values in data {
     }
 }
 
-
-
-//need a funciton to sort a diconary???
-
-//countingDictonary
-//var sortedData2 = countingDictonary.sort(Double, Int))
-//countingDictonary
-
+//loup throught the array and find the value with the highest value in the int column and keep it
 for (value, frequncy) in countingDictonary{
-//use a fucntion to calaulate the highest value in the dictnary
     if(frequncy > holdingint){
         holdingint = frequncy
         mode = value
 
     }
 }
-//print("The mode is", mode)
 
 
-//////std devaiton
-//////use the data collect and get help from mr. lorrisen about the actual formula
-////have to use the float to complete this sections of the project
+
+/*std devaiton
+use the data collect and get help from mr. lorrisen about the actual formula
+have to use the float to complete this sections of the project
+*/
 var submean = 0.0
 var stddevation = 0.0
 var stdmean = 0.0
 for (values) in data {
-    //have to add the values to the arrays
-    
-    // need help with the syntax putting the values in the array
+    // finds all the subtrack the mean then square it, and add all them up
     submean += (values - mean)*(values - mean)
     values
 }
 
+//finds the mean of these new values
 stdmean = submean / count
 
+//then square this number and store it as std devaiton
 stddevation = sqrt(stdmean)
 
-//print("The Standard Devation is", stddevation)
 
 
 ////z-score
@@ -115,17 +117,6 @@ stddevation = sqrt(stdmean)
 
 
 
-//Command line interface
-
-import Foundation
-
-
-print("Welcome")
-print("Please put the data you want analizyed here", terminator: "")
-
-var input = readLine(stripNewline: true)
-
-print(input)
 
 
 
