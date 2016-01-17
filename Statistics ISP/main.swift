@@ -8,36 +8,39 @@
 
 import Foundation
 
-
-print("Welcome")
+//text welcomes and educated the user on the program
+print("Welcome, enter the data which you want analyzed")
+print("To end this program's input function type Quit, quit, QUIT, Q or q")
 print("\nEnter your first number: ", terminator: "")
 
-//this will be the array that holds all the data
+//these statment allow for the while loup to funciton
 var validInput : Bool
 var endLoup : Bool
+
+//the first line read the user input while the second stores the data
 var userInput : String = readLine()!
 var data : [Double] = []
 
-//this will allow the user to type there data into the program
 
-//endLoup = false
-
+//this is the loup that funcitons as the UI
 repeat {
  endLoup = false
 
+//if they imput somthing
  switch userInput{
 
+//this is in the speical case they write any of the following charicters this statment ends the loup
  case "Quit", "QUIT", "quit", "Q", "q":
     endLoup = true
 
     default:
-//attempt to convert the imput to a float
+//this if statment determines if the input is a number a invalid input
 if let number = Double(userInput){
     data.append(number)
     print("\nThat was a valid input:  ", terminator: "")
     userInput = readLine()!
 }else{
-    print("\nInvalid Input ", terminator: "")
+    print("\nInvalid Input, please enter a number :  ", terminator: "")
     userInput = readLine()!
 }
 }
@@ -45,7 +48,7 @@ if let number = Double(userInput){
 
 
 
-//begggining of PROGRAM
+//Beggining of the math of the program
 
 
 import Cocoa
